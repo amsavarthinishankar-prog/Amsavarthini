@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        int num;
+        Scanner scanner = new Scanner(System.in);
+        do{
+         System.out.println("Enter the number  from 1 to 10:");
+         num = scanner.nextInt();
+         
+        
+            if (num >= 1 && num <= 10) {
+         if(num % 2==0){
+            System.out.println("the number is even");
+        }else{
+        System.out.println("the number is odd");
+        }
+      } else if (num >= 0) {
+                
+            }
+
+        } while (num >= 0);
+    }
+}
+        
+            
+
+
+
+
+        
+        
+        
+        
+        
+        
