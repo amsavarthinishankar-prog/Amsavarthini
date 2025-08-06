@@ -1,0 +1,9 @@
+class Main {
+    public static void main(String[] args) {
+        String[] array = {"Amsavarthini", "rakchana", "sanmathi"};
+        array[0] = "Amsavarthini";
+        System.out.println(array[1]);  
+        
+       
+    }
+}
