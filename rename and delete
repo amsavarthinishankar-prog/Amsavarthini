@@ -1,0 +1,44 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        List<String> names = new ArrayList<>(Arrays.asList("Amsavarthini", "Rakchana", "Sanmathi", "Jothi"));
+
+        System.out.println("Original names:");
+        System.out.println(names); // Prints list directly
+
+        
+        System.out.print("Enter the name you want to rename: ");
+        String oldName = sc.nextLine();
+        System.out.print("Enter the new name: ");
+        String newName = sc.nextLine();
+
+        int index = names.indexOf(oldName);
+        if (index != -1) {
+            names.set(index, newName);
+            System.out.println("Name updated successfully.");
+        } else {
+            System.out.println("Name not found for renaming.");
+        }
+
+        
+        System.out.print("Enter the name you want to delete: ");
+        String deleteName = sc.nextLine();
+
+        boolean removed = names.remove(deleteName);
+        if (removed) {
+            System.out.println("Name deleted successfully.");
+        } else {
+            System.out.println("Name not found for deletion.");
+        }
+
+        
+        System.out.println("Final list of names:");
+        System.out.println(names);
+
+        sc.close();
+    }
+}
