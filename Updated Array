@@ -1,0 +1,16 @@
+class Main {
+    public static void main(String[] args) {
+        String[] array = {"Amsavarthini", "rakchana", "sanmathi"};
+        
+        for (int i = 0; i < array.length; i++) {
+            if(array[i]=="sanmathi"){
+                array[i]="shankar kumar";
+                System.out.println("updated name:"+array[i]);
+            }
+            
+            System.out.println(array[i]);
+        }
+        
+        
+    }
+}
