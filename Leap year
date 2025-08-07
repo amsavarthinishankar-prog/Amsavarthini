@@ -13,3 +13,6 @@ class Main {
 
           }
 }
+OUTPUT:
+Enter a year: 2080
+2080 is a leap year.
