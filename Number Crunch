@@ -11,3 +11,7 @@ class Main {
         System.out.println("Random number between " + startingNumber + " and " + endingNumber + ": " + randomNumber);
     }
 }
+OUTPUT:
+Enter the starting number: 30
+Enter the ending number: 40
+Random number between 30 and 40: 37
