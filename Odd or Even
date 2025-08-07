@@ -13,3 +13,7 @@ class Main {
         
     }
 }
+OUTPUT:
+Enter the number
+7
+the number is odd
