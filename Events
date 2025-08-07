@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);  
+        Scanner data = new Scanner(System.in);  
 
         System.out.print("Enter the number of events: ");
-        int size = sc.nextInt();
+        int size = data.nextInt();
 
         int[] arr = new int[size];
 
@@ -19,6 +19,6 @@ class Main {
             System.out.println(num);
         }
 
-        sc.close(); // Close Scanner
+        
     }
 }
