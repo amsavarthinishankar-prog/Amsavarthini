@@ -2,7 +2,7 @@ import java.util.*;
 
 class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner data = new Scanner(System.in);
 
         
         List<String> names = new ArrayList<>(Arrays.asList("Amsavarthini", "Rakchana", "Sanmathi", "Jothi"));
@@ -12,9 +12,9 @@ class Main {
 
         
         System.out.print("Enter the name you want to rename: ");
-        String oldName = sc.nextLine();
+        String oldName = data.nextLine();
         System.out.print("Enter the new name: ");
-        String newName = sc.nextLine();
+        String newName = data.nextLine();
 
         int index = names.indexOf(oldName);
         if (index != -1) {
@@ -26,7 +26,7 @@ class Main {
 
         
         System.out.print("Enter the name you want to delete: ");
-        String deleteName = sc.nextLine();
+        String deleteName = data.nextLine();
 
         boolean removed = names.remove(deleteName);
         if (removed) {
@@ -42,3 +42,13 @@ class Main {
         sc.close();
     }
 }
+output:
+Original names:
+[Amsavarthini, Rakchana, Sanmathi, Jothi]
+Enter the name you want to rename: Sanmathi
+Enter the new name: Kavi
+Name updated successfully.
+Enter the name you want to delete: Jothi
+Name deleted successfully.
+Final list of names:
+[Amsavarthini, Rakchana, Kavi]
