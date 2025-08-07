@@ -3,10 +3,10 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
         int num;
-        Scanner scanner = new Scanner(System.in);
+        Scanner data = new Scanner(System.in);
         do{
          System.out.println("Enter the number  from 1 to 10:");
-         num = scanner.nextInt();
+         num = data.nextInt();
          
         
             if (num >= 1 && num <= 10) {
@@ -22,6 +22,33 @@ class Main {
         } while (num >= 0);
     }
 }
+OUTPUT:
+Enter the number  from 1 to 10:
+5
+the number is odd
+Enter the number  from 1 to 10:
+6
+the number is even
+Enter the number  from 1 to 10:
+8
+the number is even
+Enter the number  from 1 to 10:
+2
+the number is even
+Enter the number  from 1 to 10:
+9
+the number is odd
+Enter the number  from 1 to 10:
+4
+the number is even
+Enter the number  from 1 to 10:
+7
+the number is odd
+Enter the number  from 1 to 10:
+1
+the number is odd
+Enter the number  from 1 to 10:
+
         
             
 
