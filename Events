@@ -11,7 +11,7 @@ class Main {
 
         System.out.println("Enter the events:");
         for (int i = 0; i < size; i++) {
-            arr[i] = sc.nextInt();
+            arr[i] = data.nextInt();
         }
 
         System.out.println("Events entered:");
@@ -22,3 +22,17 @@ class Main {
         
     }
 }
+OUTPUT:
+Enter the number of events: 5  
+Enter the events:  
+10  
+20  
+30  
+40  
+50  
+Events entered:  
+10  
+20  
+30  
+40  
+50
