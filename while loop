@@ -3,9 +3,9 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
         int num;
-        Scanner scanner = new Scanner(System.in);
+        Scanner data = new Scanner(System.in);
          System.out.println("Enter the number  from 1 to 10:");
-         num = scanner.nextInt();
+         num = data.nextInt();
         while(num >=0) {
             if (num >= 1 && num <= 10) {
          if(num % 2==0){
@@ -22,5 +22,18 @@ class Main {
         }
     }
 }
+output:
+Enter the number  from 1 to 10:
+7
+the number is odd
+the number is odd
+the number is odd
+the number is odd
+the number is odd
+the number is odd
+the number is odd
+the number is odd
+the number is odd
+the number is odd
 
         
