@@ -16,3 +16,5 @@ class Main {
         }
     }
 }
+OUTPUT:
+145 is NOT a factorial.
