@@ -8,3 +8,12 @@ class Main {
         System.out.println("LIFTOFF!");
     }
 }
+OUTPUT:
+10
+8
+6
+4
+2
+0
+LIFTOFF!
+
