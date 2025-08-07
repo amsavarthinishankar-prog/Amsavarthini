@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner data = new Scanner(System.in);
 
         
         System.out.print("Enter a number: ");
-        int userNumber = scanner.nextInt();
+        int userNumber = data.nextInt();
 
         
         for (int i = 1; i <= userNumber; i++) {
@@ -20,3 +20,26 @@ class Main {
         
     }
 }
+OUTPUT:
+Enter a number: 5
+Outer loop 1
+1
+2
+3
+Outer loop 2
+2
+4
+6
+Outer loop 3
+3
+6
+9
+Outer loop 4
+4
+8
+12
+Outer loop 5
+5
+10
+15
+
