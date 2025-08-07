@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner data = new Scanner(System.in);
          System.out.println("Enter the number  from 1 to 7:");
-        int day = scanner.nextInt();
+        int day = data.nextInt();
         switch (day)
         {
             case 1:
