@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Main {
+    public static void calculate(int a, int b) {
+        System.out.println("Addition: " + (a + b));
+        System.out.println("Subtraction: " + (a - b));
+        System.out.println("Division (modulo): " + (a % b));
+    }
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+    System.out.print("Enter first number: ");
+        int a = data.nextInt();
+        System.out.print("Enter second number: ");
+        int b = data.nextInt();
+
+        calculate(a , b );
+    }
+}
+output:
+Enter first number: 100
+Enter second number: 50
+Addition: 150
+Subtraction: 50
+Division (modulo): 0
