@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+
+        System.out.print("ENTER THE NUMBER: ");
+        int target = data.nextInt();
+
+        System.out.print("ENTER THE RANGE START: ");
+        int start = data.nextInt();
+
+        System.out.print("ENTER THE RANGE END: ");
+        int end = data.nextInt();  
+
+        System.out.println("InValid pairs:");
+        for (int i = start; i <= end; i++) {
+            int complement = target - i;
+            if (complement >= start && complement <= end && i <= complement) {
+                System.out.println("\t\t" + i + "+" + complement);
+            }
+        }
+    }
+}
+output:
+ENTER THE NUMBER: 10
+ENTER THE RANGE START: 1
+ENTER THE RANGE END: 10
+
+Valid pairs:
+		1+9
+		2+8
+		3+7
+		4+6
+		5+5
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+       
+        System.out.print("Enter the start of the range: ");
+        int start = input.nextInt();
+
+        System.out.print("Enter the end of the range: ");
+        int end = input.nextInt();
+
+        System.out.println("Auto-phobi numbers from " + start + " to " + end + ":");
+
+        
+        for (int i = start; i <= end; i++) {
+            int square = i * i;
+
+            String numStr = String.valueOf(i);
+            String squareStr = String.valueOf(square);
+
+                       if (squareStr.endsWith(numStr)) {
+                System.out.println("\t" + i + "^2 = " + square);
+            }
+        }
+    }
+}
+output:
+Enter the start of the range: 1
+Enter the end of the range: 1000
+
+Auto-phobi numbers from 1 to 1000:
+	1^2 = 1
+	5^2 = 25
+	6^2 = 36
+	25^2 = 625
+	76^2 = 5776
+	376^2 = 141376
+	625^2 = 390625
