@@ -1,3 +1,4 @@
+METHODS:
 PROGRAM:
 class Main {
     public static void myMethod() {
@@ -11,3 +12,63 @@ class Main {
 }
 OUTPUT:
 Amsavarthini
+
+
+INSTANT METHOD:
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Instant Method");
+        Main obj = new Main(); 
+        obj.sample();
+    }
+
+    public void sample() {
+        int a = 10;
+        System.out.println(a);
+    }
+}
+OUTPUT:
+Instant Method
+10
+1 MAIN CLASS AND 3 SUBCLASS:
+class Add {
+    public void operate(int x, int y) {
+        System.out.println("Addition: " + (x + y));
+    }
+}
+class Subtract {
+    public void operate(int x, int y) {
+        System.out.println("Subtraction: " + (x - y));
+    }
+}
+class Divide {
+    public void operate(int x, int y) {
+        if (y != 0) {
+            System.out.println("Division: " + (x / y));
+        } else {
+            System.out.println("Cannot divide by zero!");
+        }
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        int a = 50, b = 60;
+        Add addObj = new Add();
+        addObj.operate(a, b);
+
+        Subtract subObj = new Subtract();
+        subObj.operate(a, b);
+
+        Divide divObj = new Divide();
+        divObj.operate(a, b);
+    }
+}
+OUTPUT:
+Addition: 110
+Subtraction: -10
+Division: 0
+LIVE EXAMPLE(GPAY):
+
