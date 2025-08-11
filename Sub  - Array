@@ -1,0 +1,116 @@
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        int a = 1;
+        int b = 4;
+        int[] sub = new int[b - a];
+        for (int i = a; i < b; i++) {
+            sub[i - a] = arr[i];
+        }
+
+     for (int x : sub) {
+            System.out.print(x + " ");
+        }
+
+        System.out.println();
+    }
+}
+OUTPUT:
+2 3 4 
+MERGEING ARRAY:
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr1 = {6, 7, 8, 9};
+        int[] merge = new int[arr.length + arr1.length];
+
+       
+        for (int i = 0; i < arr.length; i++) {
+            merge[i] = arr[i];
+        }
+
+   
+        for (int i = 0; i < arr1.length; i++) {
+            merge[arr.length + i] = arr1[i];
+        }
+
+     
+        System.out.print("");
+        for (int i = 0; i < merge.length; i++) {
+            System.out.print(merge[i] + " ");
+        }
+
+        System.out.println(); 
+    }
+}
+OURPUT:
+1 2 3 4 5 6 7 8 9 
+SUM OF TWO ARRAY
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr1 = {6, 7, 8, 10};
+
+        int sum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+
+        for (int i = 0; i < arr1.length; i++) {
+            sum += arr1[i];
+        }
+
+        System.out.println("Sum of both arrays: " + sum);
+    }
+}
+OUTPUT:
+Sum of both arrays: 46
+USER INPUT SUM OF ARRAY
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data= new Scanner(System.in);
+
+        
+        System.out.print("Enter  first array: ");
+        int size1 = data.nextInt();
+        int[] arr = new int[size1];
+        System.out.println("Enter  first array:");
+        for (int i = 0; i < size1; i++) {
+            arr[i] = data.nextInt();
+        }
+
+        
+        System.out.print("Enter  second array: ");
+        int size2 = data.nextInt();
+        int[] arr1 = new int[size2];
+        System.out.println("Enter  second array:");
+        for (int i = 0; i < size2; i++) {
+            arr1[i] = data.nextInt();
+        }
+
+        
+        int sum = 0;
+        for (int i = 0; i < size1; i++) {
+            sum += arr[i];
+        }
+        for (int i = 0; i < size2; i++) {
+            sum += arr1[i];
+        }
+
+        System.out.println("Sum of  array: " + sum);
+    }
+}
+OUTPUT:
+Enter  first array: 2
+Enter  first array:
+5 6
+Enter  second array: 1
+Enter  second array:
+8
+Sum of  array: 19
+
+
+
