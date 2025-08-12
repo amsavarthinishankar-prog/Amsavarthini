@@ -67,4 +67,63 @@ class Main {
 output:
 Compare:7
 Combine:HelloAmsaShankar
+PROGRAM 6:
+class Main {
+    public static void main(String[] args) {
+        String data = "Amsa";
+        System.out.println(data.contains("Ammu"));
+        System.out.println(data.contentEquals("Amsa"));
+    }
+}
+OUTPUT:
+false
+true
+PROGRAM 8:
+class Main {
+    public static void main(String[] args) {
+        String data = "Amsa";
+        String copyValueOf = "Ammu"; 
+
+        System.out.println("copyValueOf: " + copyValueOf);
+        System.out.println(" end with 'Amsa'? " + data.endsWith("Amsa"));
+    }
+}
+OUTPUT:
+copyValueOf: Ammu
+ end with 'Amsa'? true
+PROGRAM 9:
+class Main {
+    public static void main(String[] args) {
+        String data = "Amsa";
+        String Hi = "Hi %s my age is %d";
+        System.out.println(data.equalsIgnoreCase("Hello")); 
+        System.out.printf(Hi, "Amsa", 21);
+    }
+}
+OUTPUT:
+false
+Hi Amsa my age is 21
+PROGRAM 10:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+    System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+    System.out.println(name.equalsIgnoreCase("Ammu"));
+    System.out.printf("Hi %s, my age is %d", name, age);
+    }
+}
+OUTPUT:
+Enter your name: Ammu
+Enter your age: 20
+true
+Hi Ammu, my age is 20
+PROGRAM 11:
+
+
+
 
