@@ -1,0 +1,70 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        String data = "Amsa_Shankar";
+        char mystr = data.charAt(3);
+        Scanner x = new Scanner(System.in);
+        System.out.print("Enter a character:");
+        char y = x.next().charAt(3);
+        System.out.println(" " + mystr);
+        System.out.println( " " + y);
+    }
+}
+OUTPUT:
+Enter a character:Jothi
+ a
+ h
+PROGRAM 2:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        String data = "Amsa_Shankar";
+        int mystr = data.codePointCount(0, data.length()); 
+        Scanner x = new Scanner(System.in);
+        System.out.print("Enter a Name: ");
+        int y = x.next().codePointCount(0,1); 
+        System.out.println(" " + mystr);
+        System.out.println(" " + y);
+    }
+}
+OUTPUT:
+Enter a Name: k
+ 12
+ 1
+PROGRAM 3:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        String data = "Amsa_Shankar";
+        int mystr = data.codePointBefore(1);
+        Scanner x = new Scanner(System.in);
+        System.out.print("Enter a character: ");
+        String input = x.next(); 
+        int y = input.codePointBefore(1); 
+        System.out.println("Code point of first  string: " + mystr);
+        System.out.println("Code point of your input: " + y);
+    }
+}
+output:
+Enter a character: s
+Code point of first  string: 65
+Code point of your input: 115
+PROGRAM 5:
+class Main {
+    public static void main(String[] args) {
+        String data = "Hello";
+       String data2 = "AmsaShankar";
+       int result = data.compareToIgnoreCase(data2);
+        String result2 = data.concat(data2);
+       System.out.println("Compare:" + result);
+       System.out.println("Combine:" + result2);
+       
+    }
+}
+output:
+Compare:7
+Combine:HelloAmsaShankar
+
