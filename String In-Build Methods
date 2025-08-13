@@ -123,6 +123,150 @@ Enter your age: 20
 true
 Hi Ammu, my age is 20
 PROGRAM 11:
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        String a = "new world";
+        String b = "Amsavarthini";
+        String x = "Shankar Kumar";
+        String y = "new world";
+        System.out.println("Hello".matches(x));
+        System.out.println("world".matches(x));
+        System.out.println("javascript".matches(x));
+        System.out.println(y.regionMatches(4,a,4,5));
+        
+    }
+}
+OUTPUT:
+false
+false
+false
+true
+PROGRAM 12:
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+       String x = "Hellos";
+       String y = "Hello Amsa Hello";
+       System.out.println(x.replace('s','p'));
+       String a = "(?i)Hello";
+       System.out.println(y.replaceAll(a,"Hi"));
+       String b  = "Hello";
+       System.out.println(y.replaceFirst(b,"Hi"));
+        
+    }
+}
+OUTPUT:
+Hellop
+Hi Amsa Hi
+Hi Amsa Hello
+PROGRAM 13:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String x = data.nextLine(); 
+        String y = "[,\\.\\ j]";  
+        String[] z = x.split(y);
+
+        System.out.println("Split :");
+        for (String j : z) {
+            System.out.println(j);
+        }
+
+       
+    }
+}
+OUTPUT:
+Enter a string: Hello,Amsa.How are you?
+Split :
+Hello
+Amsa
+How
+are
+you?
+PROGRAM 14:
+class Main {
+    public static void main(String[] args) {
+        String x = "Amsa";
+        System.out.println(x.startsWith("Amsa"));
+        System.out.println(x.startsWith("He"));
+OUTPUT:
+true
+false
+
+       
+ PROGRAM 15:       
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+        System.out.print("Enter the gmail:");
+        String gmail = data.nextLine();
+        int atIndex = gmail.indexOf('@');
+        String domainOnly = gmail.substring(atIndex);
+        System.out.println("Result:" + domainOnly);
+       
+        
+    }
+}
+
+OUTPUT:
+Enter the gmail:amsa@gmail.com
+Result:@gmail.com
+    }
+}
+OUTPUT:
+true
+false
+PROGRAM 15:
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        String x = "Hello_Amsa";
+        char[] y = x.toCharArray();
+        System.out.println(y[2]);
+       
+    
+}
+}
+OUTPUT:
+l
+PROGRAM 16:
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        String x = "   Hello_Amsa  ";
+       System.out.println(x);
+       System.out.println(x.trim());
+       System.out.println(String.valueOf(x));
+       System.out.println(String.valueOf(true));
+       
+       
+    
+}
+}
+OUTPUT:
+Hello_Amsa  
+Hello_Amsa
+   Hello_Amsa  
+true
+
+
+
+
+
 
 
 
