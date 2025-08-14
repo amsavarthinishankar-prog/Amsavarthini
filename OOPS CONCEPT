@@ -40,6 +40,73 @@ public class Main {
     }
 }
 OUTPUT:
+import java.util.Scanner;
+
+// parent class
+class Good {
+    void family() {
+        System.out.println("Family details");
+    }
+}
+
+// child classes
+class Kulanthaivelan extends Good {
+    void family() {
+        System.out.println("Kulanthaivelan");
+    }
+}
+
+class Maalathi extends Good {
+    void family() {
+        System.out.println("Maalathi");
+    }
+}
+
+class Shankarkumar extends Good {
+    void family() {
+        System.out.println("Shankarkumar");
+    }
+}
+
+class Jothi extends Good {
+    void family() {
+        System.out.println("Jothi");
+    }
+}
+
+// main class
+public class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+        Good person;
+
+        System.out.println("Enter a name (Kulanthaivelan, Maalathi, Shankarkumar, Jothi):");
+        String input = data.nextLine().trim().toLowerCase();
+
+        if (input.equals("kulanthaivelan")) {
+            person = new Kulanthaivelan();
+        } else if (input.equals("maalathi")) {
+            person = new Maalathi();
+        } else if (input.equals("shankarkumar")) {
+            person = new Shankarkumar();
+        } else if (input.equals("jothi")) {
+            person = new Jothi();
+        } else {
+            System.out.println("Invalid input ");
+            person = new Good();
+        }
+
+        person.family();
+       
+    }
+}
+OUTPUT:
+Enter a name (Kulanthaivelan, Maalathi, Shankarkumar, Jothi):
+Jothi
+Jothi
+
+PROGRAM 3:
+
 BMW
 Audi
 Benz
