@@ -199,5 +199,34 @@ This is the Mother
 This is a Daughter1 Amsavarthini
 This is the Mother
 This is a Daughter2 Rakchana
+PROGRAM 5:
+//base class
+interface Audi {
+    default void modelOfAudi() {
+        System.out.println("This is a modelOfAudi");
+    }
+}//base class
+interface BMW {
+    default void modelOfbmw() {
+        System.out.println("This is a modelOfbmw");
+    }
+}
+class Car implements Audi,BMW {
+    Car() {
+        System.out.println("This is a cars");
+    }
+}
+//Main class
+public class Main {
+    public static void main(String[] args) {
+        Car obj = new Car();
+        obj.modelOfAudi();
+        obj.modelOfbmw();
+    }
+}
+OUTPUT:
+This is a cars
+This is a modelOfAudi
+This is a modelOfbmw
 
 
