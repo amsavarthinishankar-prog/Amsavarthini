@@ -1,0 +1,46 @@
+#INHERITANCE#
+//parent class
+class cars {
+    void sound() {
+        System.out.println("cars makes a sound");
+    }
+}
+//child class
+class BMW extends cars {
+    void sound() {
+        System.out.println("BMW");
+    }
+}
+//child class
+class Audi extends cars {
+    void sound() {
+        System.out.println("Audi");
+    }
+
+}
+//child class
+class Benz extends cars {
+    void sound() {
+        System.out.println("Benz");
+    }
+}
+//main class
+public class Main {
+    public static void main(String[] args) {
+        cars a;
+        a = new BMW();
+        a.sound();
+        
+        a = new Audi();
+        a.sound();
+        a = new Benz();
+        a.sound();
+        
+        
+    }
+}
+OUTPUT:
+BMW
+Audi
+Benz
+PROGRAM 2:
