@@ -110,4 +110,94 @@ PROGRAM 3:
 BMW
 Audi
 Benz
-PROGRAM 2:
+PROGRAM 2 #Single inheritance#:
+// Parent class
+class MomAndDad {
+    void family() {
+        System.out.println("Single Inheritance");
+    }
+}
+
+// Child class
+class Amsavarthini extends MomAndDad {
+    void family() {
+        System.out.println("Amsavarthini");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        MomAndDad a;
+        a = new Amsavarthini();  
+        a.family();               
+    }
+}
+output:
+Amsavarthini
+PROGRAM 3:
+//multilevel inheritance
+//base class1
+class vehicle {
+    void vehicle() {
+        System.out.println("This is a vehicle");
+        
+    }
+}
+//Base class 2
+class FourWheeler extends vehicle {
+    FourWheeler(){
+        System.out.println("This is a FourWheeler");
+    }
+}
+//derived class
+class Car extends FourWheeler {
+    Car() {
+        System.out.println("This is a car");
+    }
+}
+//main class
+public class Main {
+    public static void main(String[] args) {
+        Car obj = new Car();
+    }
+}
+OUTPUT:This is a FourWheeler
+This is a Car
+PROGRAM 4:
+//Hierarchical class
+
+//Base class 
+class Mother {
+     Mother() {
+        System.out.println("This is the Mother");
+        
+    }
+}
+//derived class 1
+class Daughter1 extends Mother {
+    Daughter1(){
+        System.out.println("This is a Daughter1 Amsavarthini");
+    }
+}
+//derived class 2
+class Daughter2 extends Mother {
+    Daughter2() {
+        System.out.println("This is a Daughter2 Rakchana");
+    }
+}
+//main class
+public class Main {
+    public static void main(String[] args) {
+Daughter1 obj1 = new Daughter1();
+Daughter2 obj2 = new Daughter2();
+    }
+}
+
+o/p:
+This is the Mother
+This is a Daughter1 Amsavarthini
+This is the Mother
+This is a Daughter2 Rakchana
+
+
